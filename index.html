@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PC Game Deals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>PC Game Deals</h1>
+    <p class="subtitle">Prices in Rand (R)</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="search" class="sr-only">Search games</label>
+      <input id="search" type="search" placeholder="Search titles…" autocomplete="off" />
+
+      <label class="check">
+        <input id="onlySale" type="checkbox" />
+        On sale only
+      </label>
+
+      <button id="loadLive" type="button">Load live deals (CheapShark)</button>
+    </section>
+
+    <p id="status" role="status" aria-live="polite"></p>
+    <p id="cheapest" class="cheapest"></p>
+
+    <ul id="list" class="grid"></ul>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="deals.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
